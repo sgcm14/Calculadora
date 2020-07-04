@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <script src="js/calc.js"></script>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div id="contenedor">
+        <div id="pantalla">0</div>
+        <div id="teclado">
+            <div id="1fila">
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(7)">7</button>
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(8)">8</button>
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(9)">9</button>
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(' / ')">  /  </button>
+            </div>
+            <div id="2fila">
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(4)">4</button>
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(5)">5</button>
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(6)">6</button>
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(' * ')">  *  </button>
+            </div>
+            <div id="3fila">
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(1)">1</button>
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(2)">2</button>
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(3)">3</button>
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(' - ')">  -  </button>
+            </div>
+            <div id="4fila" ><div id="mensaje">Debe ingresar valores</div>
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(0)">0</button>
+                <button type="button" class="btn btn-outline-primary" onclick="limpiar()">C</button>
+                <button type="button" class="btn btn-outline-primary" onclick="calcular()">=</button>
+                <button type="button" class="btn btn-outline-primary" onclick="añadir(' + ')"> + </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
